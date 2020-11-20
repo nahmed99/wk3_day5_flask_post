@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>My Todo List</h1>
+    <!-- Jinja 2 to merge Python into this document -->
+    <!-- Note the use of single curly brackets in this case -->
+
+    {% for task in tasks %}
+    <div>
+        <p>
+            {{ task.title }} : <b>{{ task.description }}</b>
+            {% if task.done %}
+                <span>😎</span>
+            {% endif %}
+        </p>
+    </div>
+    {% endfor %}
+
+{% endblock %}
+
+
+{% block second_one %}
+
+    <h1>My second todo List - creating a second block!!!</h1>
+    <!-- Jinja 2 to merge Python into this document -->
+    <!-- Note the use of single curly brackets in this case -->
+
+    {% for task in tasks %}
+    <div>
+        <p>
+            {{ task.title }} : <b>{{ task.description }}</b>
+            {% if task.done %}
+                <span>👽</span>
+            {% endif %}
+        </p>
+    </div>
+    {% endfor %}
+
+{% endblock %}
