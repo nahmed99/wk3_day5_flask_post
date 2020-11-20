@@ -2,6 +2,9 @@
 
 {% block content %}
 
+<!-- 
+    The name of the route that will handle this POST request is in the form field 'action'. In this case it is "/add-task"
+-->
 <form action="/add-task" method="post">
     <label for="title">Title</label>
     <input type="text" name="title" id="title">
