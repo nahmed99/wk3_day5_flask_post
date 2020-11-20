@@ -4,6 +4,8 @@ from app.models.todo_list import tasks, add_new_task
 from app.models.task import Task
 
 
+# Controller routes match HTTP routes TO functions.
+
 # The controller sits and listens, waiting for requests that will come in
 
 # This defaults to a GET request
@@ -24,6 +26,8 @@ def info():
 def create():
     return render_template('create.html', title='Add New Todo')
 
+
+#================== HANDLING DATA controllers ===================
 
 # Creating a POST request. This will be a response to the
 # data entered in the /create above.
