@@ -1,5 +1,6 @@
 from flask import render_template, request, redirect
 from app import app
+# In the following line, we can import the function separately because it is NOT from a class!
 from app.models.todo_list import tasks, add_new_task
 from app.models.task import Task
 
